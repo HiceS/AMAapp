@@ -57,6 +57,8 @@ public class MainActivity extends ActionBarActivity
     }
 
     public void onSectionAttached(int number) {
+        Fragment fragment = new main_screen();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         switch (number) {
             case 1:
                 mTitle = getString(R.string.title_section1);
