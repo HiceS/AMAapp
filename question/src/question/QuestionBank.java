@@ -16,9 +16,32 @@ public class QuestionBank {
     
     private static ArrayList<Question> questions;
     
+    
     public QuestionBank()
     {
         questions = new ArrayList<>();
+        
+        QuestionBank.add("How much does Fauzi weigh?", "Generic");
+        QuestionBank.add("How do you feel about linux?", "Computer Science");
+        QuestionBank.add("What is your favorite programing language?", "Computer Science");
+        QuestionBank.add("What should we name our first child?", "Generic");
+        QuestionBank.add("Do you even lift?", "Generic");
+        QuestionBank.add("What do you do for fun?", "Generic");
+        QuestionBank.add("How much can you bench?", "Generic");
+        QuestionBank.add("What is your favorite feature?", "Generic");
+        QuestionBank.add("Why are ou so attracted to me?", "Generic");
+        QuestionBank.add("What are you doing right now?", "Generic");
+        QuestionBank.add("Do you like to cook?", "Generic");
+        QuestionBank.add("Do you have any pets?", "Generic");
+        QuestionBank.add("Do you have any siblings?", "Generic");
+        QuestionBank.add("How many types of cheese are there in the world?", "Generic");
+        QuestionBank.add("How fast can you grow a beard?", "Generic");
+        QuestionBank.add("Harry Potter or Twilight?", "Generic");
+        QuestionBank.add("Do you know the muffin man?", "Generic");
+        QuestionBank.add("What do you think happens after you die?", "Generic");
+        QuestionBank.add("What is your favorite food?", "Generic");
+        QuestionBank.add("What is the meaning of life?", "Generic");
+        QuestionBank.add("Who would you want to be trapped on a dessert island with?", "Generic");
     }
     
     public static void add(String question, String tag)
