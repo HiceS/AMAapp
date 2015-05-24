@@ -1,4 +1,4 @@
-package com.thelogiccore.logic.ama;
+package com.thelogiccore.logic.ama.ama;
 
 import android.app.Activity;
 import android.app.SearchManager;
@@ -25,16 +25,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.thelogiccore.logic.ama.*;
+import com.thelogiccore.logic.ama.All_Questions;
+import com.thelogiccore.logic.ama.Formal;
+import com.thelogiccore.logic.ama.NavigationDrawerFragment;
+import com.thelogiccore.logic.ama.main_screen;
+
 import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+        implements com.thelogiccore.logic.ama.ama.NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
-    private NavigationDrawerFragment mNavigationDrawerFragment;
+    private com.thelogiccore.logic.ama.ama.NavigationDrawerFragment mNavigationDrawerFragment;
 
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
@@ -46,7 +52,7 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mNavigationDrawerFragment = (NavigationDrawerFragment)
+        mNavigationDrawerFragment = (com.thelogiccore.logic.ama.ama.NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
 
@@ -59,7 +65,7 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        Fragment fragment = new main_screen();
+        Fragment fragment = new com.thelogiccore.logic.ama.ama.main_screen();
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch (position) {
             case 0:
@@ -68,7 +74,7 @@ public class MainActivity extends ActionBarActivity
                 fragment = new Computer_Science();
                 break;
             case 2:
-                fragment = new Formal();
+                fragment = new com.thelogiccore.logic.ama.ama.Formal();
                 break;
             case 3:
                 fragment = new Generic();
@@ -77,7 +83,7 @@ public class MainActivity extends ActionBarActivity
                 fragment = new Awkward();
                 break;
             case 5:
-                fragment = new All_Questions();
+                fragment = new com.thelogiccore.logic.ama.ama.All_Questions();
                 break;
         }
         fragmentManager.beginTransaction()
