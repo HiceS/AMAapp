@@ -18,13 +18,14 @@ public class Awkward extends Fragment {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.compsci_fragment,
                 container, false);
+        final TextView questionshow = (TextView) view.findViewById(R.id.question_compsci);
+        questionshow.setText("");
         Button button = (Button) view.findViewById(R.id.compsci_gen);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                TextView questionshow = (TextView) view.findViewById(R.id.question_compsci);
                 Question question = qBank.getRandomQuestion("Awkward");
 
                 questionshow.setText(question.getQuestion());

@@ -101,17 +101,7 @@ public class QuestionBank {
                 questions.get(i).setCalled(false);
 
         quest.get(index).setCalled(true);
-//        if (index == quest.size()) {
-//        markAsked(quest.get(index));
-//        }
-//        else{
-//            for(Question jim: questions)
-//            {
-//                jim.setCalled(false);
-//            }
-//        }
 
-        quest.get(index).i = index;
         return quest.get(index);
     }
 
@@ -119,7 +109,6 @@ public class QuestionBank {
     {
         ArrayList<Question> quest = new ArrayList<>();
 
-       // int index = (int)((Math.random()* questions.size()) % quest.size());
 
         for(Question q:questions)
         {
@@ -132,17 +121,7 @@ public class QuestionBank {
                 questions.get(i).setCalled(false);
 
         quest.get(index).setCalled(true);
-//        if (index == quest.size()) {
-//        markAsked(quest.get(index));
-//        }
-//        else{
-//            for(Question jim: questions)
-//            {
-//                jim.setCalled(false);
-//            }
-//        }
 
-        quest.get(index).i = index;
         return quest.get(index);
     }
 
