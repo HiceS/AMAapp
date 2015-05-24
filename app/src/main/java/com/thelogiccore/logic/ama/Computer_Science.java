@@ -14,7 +14,7 @@ import android.widget.TextView;
  */
 public class Computer_Science extends Fragment{
 
-    final QuestionBank qBank = new QuestionBank();
+//    final QuestionBank qBank = new QuestionBank();
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -27,7 +27,7 @@ public class Computer_Science extends Fragment{
             @Override
             public void onClick(View v) {
 
-                Question question = qBank.getRandomQuestion("Computer Science");
+                Question question = MainActivity.qBank.getRandomQuestion("Computer Science");
 
                 questionshow.setText(question.getQuestion());
             }
@@ -43,7 +43,7 @@ public class Computer_Science extends Fragment{
                 String addQuestion = addstuff.getText().toString();
 
                 if(!addQuestion.isEmpty())
-                    qBank.add(addQuestion, "Computer Science");
+                    MainActivity.qBank.add(addQuestion, "Computer Science");
 
                 addstuff.setText("");
             }

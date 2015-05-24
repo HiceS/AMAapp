@@ -13,7 +13,7 @@ import android.widget.TextView;
  * Created by Shawn on 5/23/2015.
  */
 public class Formal extends Fragment{
-    final QuestionBank qBank = new QuestionBank();
+//    final QuestionBank qBank = new QuestionBank();
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -22,12 +22,10 @@ public class Formal extends Fragment{
         final TextView questionshow = (TextView) view.findViewById(R.id.question_XXX);
         questionshow.setText("");
         Button button = (Button) view.findViewById(R.id.XXX_gen);
-        button.setOnClickListener(new View.OnClickListener()
-        {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                Question question = qBank.getRandomQuestion("XXX");
+            public void onClick(View v) {
+                Question question = MainActivity.qBank.getRandomQuestion("XXX");
 
                 questionshow.setText(question.getQuestion());
 
@@ -44,7 +42,7 @@ public class Formal extends Fragment{
                 String addQuestion = addstuff.getText().toString();
 
                 if(!addQuestion.isEmpty())
-                    qBank.add(addQuestion, "XXX");
+                    MainActivity.qBank.add(addQuestion, "XXX");
 
                 addstuff.setText("");
             }

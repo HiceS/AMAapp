@@ -12,7 +12,7 @@ import android.widget.TextView;
  * Created by Shawn on 5/23/2015.
  */
 public class All_Questions extends Fragment {
-    final QuestionBank qBank = new QuestionBank();
+//    final QuestionBank qBank = new QuestionBank();
     public String questionthing;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class All_Questions extends Fragment {
             @Override
             public void onClick(View v)
             {
-                Question question = qBank.getRandomQuestion();
+                Question question = MainActivity.qBank.getRandomQuestion();
 
                 questionshow.setText(question.getQuestion());
 

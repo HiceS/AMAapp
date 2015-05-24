@@ -13,7 +13,7 @@ import android.widget.TextView;
  * Created by Shawn on 5/23/2015.
  */
 public class Awkward extends Fragment {
-    final QuestionBank qBank = new QuestionBank();
+//    final QuestionBank qBank = new QuestionBank();
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -25,7 +25,7 @@ public class Awkward extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Question question = qBank.getRandomQuestion("Awkward");
+                Question question = MainActivity.qBank.getRandomQuestion("Awkward");
 
                 questionshow.setText(question.getQuestion());
 
@@ -41,7 +41,7 @@ public class Awkward extends Fragment {
                 String addQuestion = addstuff.getText().toString();
 
                 if(!addQuestion.isEmpty())
-                    qBank.add(addQuestion, "Awkward");
+                    MainActivity.qBank.add(addQuestion, "Awkward");
 
                 addstuff.setText("");
             }

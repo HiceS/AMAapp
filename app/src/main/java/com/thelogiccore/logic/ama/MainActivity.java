@@ -36,6 +36,9 @@ public class MainActivity extends ActionBarActivity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
+    // Database of all questions
+    public static final QuestionBank qBank = new QuestionBank();
+
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
