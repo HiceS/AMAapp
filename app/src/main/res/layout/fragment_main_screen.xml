@@ -4,20 +4,7 @@
 
     android:layout_height="match_parent"
     android:background = "@drawable/home_background_shawn_you_fool">
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="53dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:text="Ask Me Anything"
-        android:textSize="20sp"
-        android:fontFamily="@string/app_name"
-        android:textAppearance="@color/abc_background_cache_hint_selector_material_dark"
-        android:layout_gravity="center_horizontal"
-        android:rotationY="35"/>
+    
 
 
 </LinearLayout>
