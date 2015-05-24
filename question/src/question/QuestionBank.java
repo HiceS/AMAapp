@@ -55,7 +55,15 @@ public class QuestionBank {
         return askable;
     }
     
-    public static void markAsked(Question quest)
+    public Question getRandomQuestion(String tag)
+    {
+        ArrayList<Question> quest = tags(tag);
+        int index = (int)(Math.random()*(quest.size()+1));
+        markAsked(quest.get(index));
+        return quest.get(index);
+    }
+    
+    public void markAsked(Question quest)
     {
         for(Question question: questions)
         {
