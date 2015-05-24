@@ -42,7 +42,11 @@ public class Formal extends Fragment{
             public void onClick(View v)
             {
                 String addQuestion = addstuff.getText().toString();
-                qBank.add(addQuestion, "XXX");
+
+                if(!addQuestion.isEmpty())
+                    qBank.add(addQuestion, "XXX");
+
+                addstuff.setText("");
             }
         });
         return view;

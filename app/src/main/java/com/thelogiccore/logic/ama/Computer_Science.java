@@ -41,7 +41,11 @@ public class Computer_Science extends Fragment{
             public void onClick(View v)
             {
                 String addQuestion = addstuff.getText().toString();
-                qBank.add(addQuestion, "Computer Science");
+
+                if(!addQuestion.isEmpty())
+                    qBank.add(addQuestion, "Computer Science");
+
+                addstuff.setText("");
             }
         });
         return view;

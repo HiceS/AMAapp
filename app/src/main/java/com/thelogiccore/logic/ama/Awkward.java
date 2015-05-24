@@ -39,7 +39,11 @@ public class Awkward extends Fragment {
             public void onClick(View v)
             {
                 String addQuestion = addstuff.getText().toString();
-                qBank.add(addQuestion, "Awkward");
+
+                if(!addQuestion.isEmpty())
+                    qBank.add(addQuestion, "Awkward");
+
+                addstuff.setText("");
             }
         });
 

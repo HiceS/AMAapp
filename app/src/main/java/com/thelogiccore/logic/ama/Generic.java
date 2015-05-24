@@ -38,7 +38,11 @@ public class Generic extends Fragment{
             public void onClick(View v)
             {
                 String addQuestion = addstuff.getText().toString();
-                qBank.add(addQuestion, "Generic");
+
+                if(!addQuestion.isEmpty())
+                    qBank.add(addQuestion, "Generic");
+
+                addstuff.setText("");
             }
         });
 
