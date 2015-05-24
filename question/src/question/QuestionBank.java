@@ -83,7 +83,7 @@ public class QuestionBank {
     public Question getRandomQuestion(String tag)
     {
         ArrayList<Question> quest = tags(tag);
-        int index = (int)(Math.random()*(quest.size()+1));
+        int index = (int)(Math.random()*(quest.size()));
         markAsked(quest.get(index));
         return quest.get(index);
     }
