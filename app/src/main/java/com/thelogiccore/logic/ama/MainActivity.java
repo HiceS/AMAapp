@@ -53,6 +53,8 @@ public class MainActivity extends ActionBarActivity
         Fragment fragment = new main_screen();
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch (position) {
+            case 0:
+                break;
             case 1:
                 fragment = new Computer_Science();
                 break;
@@ -76,6 +78,8 @@ public class MainActivity extends ActionBarActivity
 
     public void onSectionAttached(int number) {
         switch (number) {
+            case 0:
+                mTitle = getString(R.string.title_section6);
             case 1:
                 mTitle = getString(R.string.title_section1);
                 break;
@@ -90,6 +94,7 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 5:
                 mTitle = getString(R.string.title_section5);
+                break;
         }
     }
 
