@@ -17,11 +17,11 @@ public class Awkward extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.awk_fragment,
+        final View view = inflater.inflate(R.layout.compsci_fragment,
                 container, false);
-        final TextView questionshow = (TextView) view.findViewById(R.id.question_awk);
+        final TextView questionshow = (TextView) view.findViewById(R.id.question_compsci);
         questionshow.setText("");
-        Button button = (Button) view.findViewById(R.id.awk_gen);
+        Button button = (Button) view.findViewById(R.id.compsci_gen);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class Awkward extends Fragment {
             public void onClick(View v)
             {
                 String addQuestion = addstuff.getText().toString();
-                qBank.add(addQuestion, "Awkward");
+                qBank.add(addQuestion, "Formal");
             }
         });
 

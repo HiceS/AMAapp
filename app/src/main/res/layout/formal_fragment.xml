@@ -1,49 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
-    <TextView
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/question_XXX"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Generate"
-        android:id="@+id/XXX_gen"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Add Question:"
-        android:id="@+id/textView"
+        android:text="New Switch"
+        android:id="@+id/switch1"
         android:layout_gravity="center_horizontal" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/string_add"
-        android:hint="Question Here"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Submit"
-        android:id="@+id/button"
-        android:layout_gravity="center_horizontal" />
-
 </LinearLayout>
