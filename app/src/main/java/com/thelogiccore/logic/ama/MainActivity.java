@@ -123,7 +123,7 @@ public class MainActivity extends ActionBarActivity
             // decide what to show in the action bar.
             getMenuInflater().inflate(R.menu.main, menu);
             View v = (View) menu.findItem(R.id.search).getActionView();
-/*            *//** Get the edit text from the action view *//*
+            /** Get the edit text from the action view *//*
             EditText txtSearch = (EditText) v.findViewById(R.id.txt_search);
 
             *//** Setting an action listener *//*
@@ -137,7 +137,7 @@ public class MainActivity extends ActionBarActivity
             });
         }
 
-        */
+
         }
         return super.onCreateOptionsMenu(menu);
     }
