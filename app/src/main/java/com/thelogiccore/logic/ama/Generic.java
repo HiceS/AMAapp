@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 /**
@@ -20,17 +21,27 @@ public class Generic extends Fragment{
         final TextView questionshow = (TextView) view.findViewById(R.id.question_compsci);
         questionshow.setText("");
         Button button = (Button) view.findViewById(R.id.compsci_gen);
-        button.setOnClickListener(new View.OnClickListener()
-        {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 Question question = qBank.getRandomQuestion("Generic");
 
                 questionshow.setText(question.getQuestion());
 
             }
         });
+        final EditText addstuff = (EditText) view.findViewById(R.id.string_add);
+        Button add = (Button) view.findViewById(R.id.button);
+        add.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                String addQuestion = addstuff.getText().toString();
+                qBank.add(addQuestion, "Formal");
+            }
+        });
+
         return view;
     }
 }

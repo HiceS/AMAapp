@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 /**
@@ -15,7 +16,7 @@ public class Formal extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.compsci_fragment,
+        final View view = inflater.inflate(R.layout.formal_fragment,
                 container, false);
         final TextView questionshow = (TextView) view.findViewById(R.id.question_compsci);
         questionshow.setText("");
@@ -29,6 +30,18 @@ public class Formal extends Fragment{
 
                 questionshow.setText(question.getQuestion());
 
+            }
+        });
+
+        final EditText addstuff = (EditText) view.findViewById(R.id.string_add);
+        Button add = (Button) view.findViewById(R.id.button);
+        add.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                String addQuestion = addstuff.getText().toString();
+                qBank.add(addQuestion, "Formal");
             }
         });
         return view;
