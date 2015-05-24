@@ -86,8 +86,6 @@ public class MainActivity extends ActionBarActivity
                 fragment = new All_Questions();
                 mTitle = "All Questions";
                 break;
-            default:
-                mTitle = "Home";
         }
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
