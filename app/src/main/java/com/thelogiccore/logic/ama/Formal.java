@@ -1,4 +1,5 @@
 package com.thelogiccore.logic.ama;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -18,9 +19,9 @@ public class Formal extends Fragment{
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.formal_fragment,
                 container, false);
-        final TextView questionshow = (TextView) view.findViewById(R.id.question_compsci);
+        final TextView questionshow = (TextView) view.findViewById(R.id.question_XXX);
         questionshow.setText("");
-        Button button = (Button) view.findViewById(R.id.compsci_gen);
+        Button button = (Button) view.findViewById(R.id.XXX_gen);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -41,7 +42,11 @@ public class Formal extends Fragment{
             public void onClick(View v)
             {
                 String addQuestion = addstuff.getText().toString();
-                qBank.add(addQuestion, "Formal");
+
+                if(!addQuestion.isEmpty())
+                    qBank.add(addQuestion, "XXX");
+
+                addstuff.setText("");
             }
         });
         return view;

@@ -32,6 +32,7 @@ public class Computer_Science extends Fragment{
                 questionshow.setText(question.getQuestion());
             }
         });
+
         final EditText addstuff = (EditText) view.findViewById(R.id.string_add);
         Button add = (Button) view.findViewById(R.id.button);
         add.setOnClickListener(new View.OnClickListener()
@@ -40,10 +41,13 @@ public class Computer_Science extends Fragment{
             public void onClick(View v)
             {
                 String addQuestion = addstuff.getText().toString();
-                qBank.add(addQuestion, "Formal");
+
+                if(!addQuestion.isEmpty())
+                    qBank.add(addQuestion, "Computer Science");
+
+                addstuff.setText("");
             }
         });
-
         return view;
     }
 }

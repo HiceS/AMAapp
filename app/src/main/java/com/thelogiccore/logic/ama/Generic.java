@@ -16,11 +16,11 @@ public class Generic extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.compsci_fragment,
+        final View view = inflater.inflate(R.layout.generic_fragment,
                 container, false);
-        final TextView questionshow = (TextView) view.findViewById(R.id.question_compsci);
+        final TextView questionshow = (TextView) view.findViewById(R.id.question_generic);
         questionshow.setText("");
-        Button button = (Button) view.findViewById(R.id.compsci_gen);
+        Button button = (Button) view.findViewById(R.id.generic_gen);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +38,11 @@ public class Generic extends Fragment{
             public void onClick(View v)
             {
                 String addQuestion = addstuff.getText().toString();
-                qBank.add(addQuestion, "Formal");
+
+                if(!addQuestion.isEmpty())
+                    qBank.add(addQuestion, "Generic");
+
+                addstuff.setText("");
             }
         });
 
