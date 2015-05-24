@@ -14,36 +14,31 @@ package com.thelogiccore.logic.ama;
 public class Question {
 	
 	private String question;
-	
 	private String tag;
-        
-        private boolean called;
+	private boolean called;
 	
 	public Question(String q, String t)
 	{
 		question = q;
-		
-		tag = t;	
-                
-                called = false;
+		tag = t;
+		called = false;
 	}
 
 	public String getQuestion()
 	{
 		return question;	
 	}
-	
 	public String getTag()
 	{
 		return tag;
 	}	
         
-        public boolean getCalled()
+	public boolean getCalled()
         {
             return called;
         }
-        public void setCalled(boolean x)
-        { 
+	public void setCalled(boolean x)
+        {
             called = x;
         }
 }

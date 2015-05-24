@@ -1,6 +1,8 @@
 package com.thelogiccore.logic.ama;
 
 import android.app.Activity;
+import android.app.SearchManager;
+import android.database.MatrixCursor;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -8,7 +10,10 @@ import android.support.v4.app.FragmentManager;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.SearchView.OnQueryTextListener;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +21,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity
@@ -113,9 +122,20 @@ public class MainActivity extends ActionBarActivity
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
             getMenuInflater().inflate(R.menu.main, menu);
-            restoreActionBar();
-            getMenuInflater().inflate(R.menu.options_menu, menu);
-            return true;
+            View v = (View) menu.findItem(R.id.search).getActionView();
+
+            /** Get the edit text from the action view */
+            EditText txtSearch = (EditText) v.findViewById(R.id.txt_search);
+
+            /** Setting an action listener */
+            txtSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    Toast.makeText(getBaseContext(), "Search : " + v.getText(), Toast.LENGTH_SHORT).show();
+                    return false;
+                }
+            });
         }
         return super.onCreateOptionsMenu(menu);
     }

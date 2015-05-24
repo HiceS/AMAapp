@@ -5,4 +5,10 @@
         app:showAsAction="withText|ifRoom" />
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:actionLayout="@layout/search_layout"
+        />
 </menu>
