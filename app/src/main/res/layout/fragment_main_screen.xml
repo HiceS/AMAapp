@@ -4,4 +4,12 @@
     android:layout_height="match_parent"
     android:background = "@drawable/FrontTitle">
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Ask Me Anything" />
+
 </LinearLayout>
