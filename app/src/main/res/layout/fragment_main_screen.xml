@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+
     android:layout_height="match_parent"
     android:background = "@drawable/front_background">
 
-    <ImageView
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/formsf14"/>
+        android:layout_height="53dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Ask Me Anything"
+        android:textSize="30sp"
+        android:fontFamily="@string/app_name"
+        android:textAppearance="@color/abc_background_cache_hint_selector_material_dark" />
 
 
 </LinearLayout>
