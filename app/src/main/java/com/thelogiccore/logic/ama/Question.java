@@ -12,7 +12,8 @@ package com.thelogiccore.logic.ama;
  * @author PatrickJ
  */
 public class Question {
-	
+
+	public int i = -1;
 	private String question;
 	private String tag;
 	private boolean called;
