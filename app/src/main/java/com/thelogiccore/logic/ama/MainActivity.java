@@ -65,6 +65,9 @@ public class MainActivity extends ActionBarActivity
             case 4:
                 fragment = new Awkward();
                 break;
+            case 5:
+                fragment = new All_Questions();
+                break;
         }
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
@@ -85,6 +88,8 @@ public class MainActivity extends ActionBarActivity
             case 4:
                 mTitle = getString(R.string.title_section4);
                 break;
+            case 5:
+                mTitle = getString(R.string.title_section5);
         }
     }
 
