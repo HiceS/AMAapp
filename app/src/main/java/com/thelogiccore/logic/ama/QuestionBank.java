@@ -55,6 +55,14 @@ public class QuestionBank {
         QuestionBank.add("Do you prefer interpreted or compiled?", "Computer Science");
         QuestionBank.add("Which is better: Intel or AMD?", "Computer Science");
         QuestionBank.add("Do you like laptops or desktops better?", "Computer Science");
+        QuestionBank.add("What is your favorite ice cream?", "Generic");
+        QuestionBank.add("What is your favorite type of tree?", "Generic");
+        QuestionBank.add("Do you put your brackets on the first line or the line after when defining a function?", "Computer Science");
+        QuestionBank.add("Are you a fan of Microsoft products?", "Computer Science");
+        QuestionBank.add("How would feel if I died tomorrow?", "Awkward");
+        QuestionBank.add("Do you like eating hair in the middle of the night?", "Awkward");
+        QuestionBank.add("Do you enjoy smelling me as much I enjoy smelling you?", "Awkward");
+        QuestionBank.add("Why are you single?", "Awkward");
     }
     
     public static void add(String question, String tag)
