@@ -31,7 +31,7 @@ public class QuestionBank {
         QuestionBank.add("What do you do for fun?", "Generic");
         QuestionBank.add("How much can you bench?", "Generic");
         QuestionBank.add("What is your favorite feature?", "Generic");
-        QuestionBank.add("Why are ou so attracted to me?", "Awkward");
+        QuestionBank.add("Why are you so attracted to me?", "Awkward");
         QuestionBank.add("What are you doing right now?", "Generic");
         QuestionBank.add("Do you like to cook?", "Generic");
         QuestionBank.add("Do you have any pets?", "Generic");
@@ -58,7 +58,7 @@ public class QuestionBank {
         for(Question question : questions)
         {
             if(!question.getCalled() && question.getTag().equals(tag))
-            {
+            {                                
                 askable.add(question);
             }
         }
@@ -90,8 +90,10 @@ public class QuestionBank {
     
     public void markAsked(Question quest)
     {
-        for(Question question: questions)
+        for(int i = 0; i < questions.size(); i++)//Question question: questions)
         {
+            Question question = questions.get(i);
+            
             if(question.getQuestion().equals(quest.getQuestion()))
             {
                 question.setCalled(true);

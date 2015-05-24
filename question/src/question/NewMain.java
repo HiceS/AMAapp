@@ -24,8 +24,7 @@ public class NewMain {
         
         questions.add("Who do you like?", "casual");
         
-        System.out.println(questions.tags("Computer Science").get(0).getQuestion());
-        
+        System.out.println(questions.getRandomQuestion("Computer Science").getQuestion());    
     }
     
 }
