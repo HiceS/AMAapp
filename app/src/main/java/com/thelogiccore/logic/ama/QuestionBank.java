@@ -22,29 +22,6 @@ public class QuestionBank {
     {
         questions = new ArrayList<>();
         
-//        QuestionBank.add("How much does Fauzi weigh?", "Awkward");
-//        QuestionBank.add("Do you love Fauzi?", "Awkward");
-//        QuestionBank.add("Do you love me?", "Awkward");
-//        QuestionBank.add("How do you feel about linux?", "Computer Science");
-//        QuestionBank.add("What is your favorite programing language?", "Computer Science");
-//        QuestionBank.add("What should we name our first child?", "Awkward");
-//        QuestionBank.add("Do you even lift?", "Generic");
-//        QuestionBank.add("What do you do for fun?", "Computer Science");
-//        QuestionBank.add("How much can you bench?", "Generic");
-//        QuestionBank.add("What is your favorite feature?", "Generic");
-//        QuestionBank.add("Why are ou so attracted to me?", "Awkward");
-//        QuestionBank.add("What are you doing right now?", "Generic");
-//        QuestionBank.add("Do you like to cook?", "Generic");
-//        QuestionBank.add("Do you have any pets?", "Generic");
-//        QuestionBank.add("Do you have any siblings?", "Generic");
-//        QuestionBank.add("How many types of cheese are there in the world?", "Generic");
-//        QuestionBank.add("How fast can you grow a beard?", "Awkward");
-//        QuestionBank.add("Harry Potter or Twilight?", "Generic");
-//        QuestionBank.add("Do you know the muffin man?", "Awkward");
-//        QuestionBank.add("What do you think happens after you die?", "Generic");
-//        QuestionBank.add("What is your favorite food?", "Generic");
-//        QuestionBank.add("What is the meaning of life?", "Generic");
-//        QuestionBank.add("Who would you want to be trapped on a dessert island with?", "Generic");
         QuestionBank.add("How much does Fauzi weigh?", "Awkward");
         QuestionBank.add("Do you love Fauzi?", "Awkward");
         QuestionBank.add("Do you love me?", "Awkward");
@@ -52,22 +29,32 @@ public class QuestionBank {
         QuestionBank.add("What is your favorite programing language?", "Computer Science");
         QuestionBank.add("What should we name our first child?", "Awkward");
         QuestionBank.add("Do you even lift?", "Generic");
-        QuestionBank.add("What do you do for fun?", "Computer Science");
+        QuestionBank.add("What do you do for fun?", "Generic");
         QuestionBank.add("How much can you bench?", "Generic");
         QuestionBank.add("What is your favorite feature?", "Generic");
         QuestionBank.add("Why are ou so attracted to me?", "Awkward");
         QuestionBank.add("What are you doing right now?", "Generic");
-        QuestionBank.add("Do you like to cook?", "Computer Science");
-        QuestionBank.add("Do you have any pets?", "Computer Science");
-        QuestionBank.add("Do you have any siblings?", "Computer Science");
-        QuestionBank.add("How many types of cheese are there in the world?", "Computer Science");
-        QuestionBank.add("How fast can you grow a beard?", "Computer Science");
-        QuestionBank.add("Harry Potter or Twilight?", "Computer Science");
-        QuestionBank.add("Do you know the muffin man?", "Computer Science");
-        QuestionBank.add("What do you think happens after you die?", "Computer Science");
-        QuestionBank.add("What is your favorite food?", "Computer Science");
-        QuestionBank.add("What is the meaning of life?", "Computer Science");
-        QuestionBank.add("Who would you want to be trapped on a dessert island with?", "Computer Science");
+        QuestionBank.add("Do you like to cook?", "Generic");
+        QuestionBank.add("Do you have any pets?", "Generic");
+        QuestionBank.add("Do you have any siblings?", "Generic");
+        QuestionBank.add("How many types of cheese are there in the world?", "Generic");
+        QuestionBank.add("How fast can you grow a beard?", "Awkward");
+        QuestionBank.add("Harry Potter or Twilight?", "Generic");
+        QuestionBank.add("Do you know the muffin man?", "Awkward");
+        QuestionBank.add("What do you think happens after you die?", "Generic");
+        QuestionBank.add("What is your favorite food?", "Generic");
+        QuestionBank.add("What is the meaning of life?", "Generic");
+        QuestionBank.add("Who would you want to be trapped on a dessert island with?", "Generic");
+        QuestionBank.add("What's your favorite position?", "XXX");
+        QuestionBank.add("What color underwear are you wearing?", "XXX");
+        QuestionBank.add("What's the naughtiest thing you've ever done?", "XXX");
+        QuestionBank.add("Have you ever said another persons name during sex?", "XXX");
+        QuestionBank.add("Boobs or booty?", "XXX");
+        QuestionBank.add("Have you ever had sex in public?", "XXX");
+        QuestionBank.add("Do you shave down stairs?", "XXX");
+        QuestionBank.add("Do you prefer interpreted or compiled?", "Computer Science");
+        QuestionBank.add("Which is better: Intel or AMD?", "Computer Science");
+        QuestionBank.add("Do you like laptops or desktops better?", "Computer Science");
     }
     
     public static void add(String question, String tag)

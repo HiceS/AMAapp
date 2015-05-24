@@ -13,7 +13,6 @@ import android.widget.TextView;
  */
 public class All_Questions extends Fragment {
     final QuestionBank qBank = new QuestionBank();
-    public String questionthing;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

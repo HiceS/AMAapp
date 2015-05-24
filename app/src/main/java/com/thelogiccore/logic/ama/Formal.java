@@ -12,7 +12,6 @@ import android.widget.TextView;
  */
 public class Formal extends Fragment{
     final QuestionBank qBank = new QuestionBank();
-    public String questionthing;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -25,7 +24,7 @@ public class Formal extends Fragment{
             public void onClick(View v)
             {
                 TextView questionshow = (TextView) view.findViewById(R.id.question_compsci);
-                Question question = qBank.getRandomQuestion("Formal");
+                Question question = qBank.getRandomQuestion("XXX");
 
                 questionshow.setText(question.getQuestion());
 
