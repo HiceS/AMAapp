@@ -52,6 +52,7 @@ public class MainActivity extends ActionBarActivity
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
+        mTitle = "Home";
 
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
@@ -65,23 +66,28 @@ public class MainActivity extends ActionBarActivity
         Fragment fragment = new main_screen();
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch (position) {
-            case 0:
-                break;
             case 1:
                 fragment = new Computer_Science();
+                mTitle = "Computer Science";
                 break;
             case 2:
                 fragment = new Formal();
+                mTitle = "XXX";
                 break;
             case 3:
                 fragment = new Generic();
+                mTitle = "Generic";
                 break;
             case 4:
                 fragment = new Awkward();
+                mTitle = "Awkward";
                 break;
             case 5:
                 fragment = new All_Questions();
+                mTitle = "All Questions";
                 break;
+            default:
+                mTitle = "Home";
         }
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
