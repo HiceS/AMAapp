@@ -44,6 +44,20 @@ public class QuestionBank {
         QuestionBank.add("What is your favorite food?", "Generic");
         QuestionBank.add("What is the meaning of life?", "Generic");
         QuestionBank.add("Who would you want to be trapped on a dessert island with?", "Generic");
+        QuestionBank.add("Do you like the great outdoors?", "Generic");
+        QuestionBank.add("How many extra chromosomes do you have?", "Awkward");
+        QuestionBank.add("How is your homr life?", "Generic");
+        QuestionBank.add("Is today tomorrow in New Zealand?", "Generic");
+        QuestionBank.add("What kind of porn do you like?", "XXX");
+        QuestionBank.add("What is the meaning of life?", "Generic");
+        QuestionBank.add("Do you go on /b?", "XXX");
+        QuestionBank.add("Why is Fauzis spine so muscular?", "Awkward");
+        QuestionBank.add("Why are you so dumb?", "Awkward");
+        QuestionBank.add("What is your fetish?", "XXX");
+        QuestionBank.add("Do you like python?", "Computer Science");
+        QuestionBank.add("What's a good computer science question?", "Computer Science");
+        
+        
     }
     
     public static void add(String question, String tag)
