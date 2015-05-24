@@ -122,19 +122,8 @@ public class MainActivity extends ActionBarActivity
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
             getMenuInflater().inflate(R.menu.main, menu);
-            View v = (View) menu.findItem(R.id.search).getActionView();
-            /** Get the edit text from the action view */
-            EditText txtSearch = (EditText) v.findViewById(R.id.txt_search);
-
-            /** Setting an action listener */
-            txtSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-
-                @Override
-                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    Toast.makeText(getBaseContext(), "Search : " + v.getText(), Toast.LENGTH_SHORT).show();
-                    return false;
-                }
-            });
+            restoreActionBar();
+            return true;
         }
         return super.onCreateOptionsMenu(menu);
     }
