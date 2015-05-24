@@ -36,6 +36,11 @@ public class Question {
 	{
 		return tag;
 	}	
+        
+        public boolean getCalled()
+        {
+            return called;
+        }
         public void setCalled(boolean x)
         { 
             called = x;

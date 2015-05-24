@@ -14,25 +14,25 @@ import java.util.ArrayList;
  */
 public class QuestionBank {
     
-    private ArrayList<Question> questions;
+    private static ArrayList<Question> questions;
     
     public QuestionBank()
     {
-        questions = new ArrayList<Question>();
+        questions = new ArrayList<>();
     }
     
-    public void add(String question, String tag)
+    public static void add(String question, String tag)
     {
         questions.add(new Question(question, tag));
     }
     
-    public ArrayList<Question> getQuestions(String tag)
+    public static ArrayList<Question> tags(String tag)
     {
-        ArrayList<Question> askable = new ArrayList<Question>();
+        ArrayList<Question> askable = new ArrayList<>();
         
-        for(Question question: questions)
+        for(Question question : questions)
         {
-            if(question.getTag().equals(tag))
+            if(!question.getCalled() && question.getTag().equals(tag))
             {
                 askable.add(question);
             }
@@ -41,7 +41,21 @@ public class QuestionBank {
         return askable;
     }
     
-    public void markAsked(Question quest)
+    public static ArrayList<Question> search(ArrayList<Question> QL, String search)
+    {
+        ArrayList<Question> askable = new ArrayList<>();
+        
+        for(Question question : QL)
+        {
+            if(!question.getCalled() && question.getQuestion().toLowerCase().contains(search.toLowerCase()))
+            {
+                askable.add(question);
+            }
+        }
+        return askable;
+    }
+    
+    public static void markAsked(Question quest)
     {
         for(Question question: questions)
         {
@@ -50,5 +64,10 @@ public class QuestionBank {
                 question.setCalled(true);
             }
         }
+    }
+    
+    public static ArrayList<Question> getQuestions()
+    {
+        return questions;
     }
 }
