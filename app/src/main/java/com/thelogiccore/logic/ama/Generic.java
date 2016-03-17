@@ -27,6 +27,7 @@ public class Generic extends Fragment{
                 Question question = MainActivity.qBank.getRandomQuestion("Generic");
 
                 questionshow.setText(question.getQuestion());
+                question.setCalled(true);
 
             }
         });

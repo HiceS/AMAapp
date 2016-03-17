@@ -12,7 +12,7 @@ import android.widget.TextView;
 /**
  * Created by Shawn on 5/23/2015.
  */
-public class Formal extends Fragment{
+public class XXX extends Fragment{
 //    final QuestionBank qBank = new QuestionBank();
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

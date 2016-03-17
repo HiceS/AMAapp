@@ -1,31 +1,17 @@
 package com.thelogiccore.logic.ama;
 
 import android.app.Activity;
-import android.app.SearchManager;
-import android.database.MatrixCursor;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.SearchView.OnQueryTextListener;
-import android.view.Gravity;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity
@@ -71,7 +57,7 @@ public class MainActivity extends ActionBarActivity
                 mTitle = "Computer Science";
                 break;
             case 2:
-                fragment = new Formal();
+                fragment = new XXX();
                 mTitle = "XXX";
                 break;
             case 3:
